@@ -1,0 +1,495 @@
+body{
+	margin:0;
+}
+
+/*			HEADER SECTION*/
+
+#body-header{
+	height: 65vh;
+	opacity: 0.7; /*decreasing the opacity of the image*/
+	background-image: url(image/mac.webp);
+	background-size: cover;
+	background-position: bottom 6% right 0%;
+	background-attachment: fixed;
+}
+
+.text-center{
+	text-align: center;
+}
+
+
+#header-horizontal-list li{
+	list-style: none;
+	display: inline-block;
+	margin: 10px;
+	margin-top: 20px;
+}
+
+#header-horizontal-list li a{
+	color: white;
+	text-decoration: none;
+	font-family: sans-serif;
+	transition: color 1s, border-bottom 2s;
+}
+
+#header-horizontal-list li a:hover{
+	border-bottom: 1px solid white;
+	color: lightgrey;
+
+}
+
+#name{
+	color: white;
+	font-size: 25px;
+	font-family: sans-serif;
+
+}
+
+#name h1{
+	margin-top: 100px;
+}
+
+#socials li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+	margin-top: 10px;
+	
+}
+
+#socials li a i{
+	padding: 10px;  /*very important*/
+	font-size: 20px;
+	color: white;
+	border-radius: 50%;
+}
+
+#socials li a i:hover{
+	box-shadow: 0px 0px 6px 4px white;
+}
+
+
+
+
+section{
+	height: auto;
+/*	text-align: center;*/
+}
+
+section:nth-child(2n){
+	background-color: whitesmoke;
+}
+
+
+
+
+
+/*				ABOUT SECTION*/
+
+
+#my-image{
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-image: url("image/myself.jpg");
+	background-size: cover;
+	background-position: left 30% bottom 0%;
+	margin: auto;
+	position: relative;
+	margin-top: -100px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 6px 4px white;
+/*	background-attachment: fixed;*/
+}
+
+#about-body{
+	width: 75%;
+	margin-left: 15%;
+}
+
+#about-body p{
+	color:slategrey;
+	font-family: sans-serif;
+	font-size: 18px;
+	word-spacing: 8px;
+	font-weight: 500;
+}
+#about-body p b{
+	color:#2857a4;
+}
+
+
+
+
+
+
+
+
+/*				SKILLS SECTION*/
+
+
+#skills{
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+#skills-header span{
+	font-size: 40px;
+	color: #2857a4;
+	font-family: sans-serif;
+}
+
+#skills-logo i{
+	color: #2857a4;
+}
+
+#skills-boxes{
+	margin-left: 15%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	gap:50px;
+}
+
+.box-container{
+	height: 25px;
+	width: 150px;
+/*	border: 1px solid black;*/
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0px 2px 6px 4px white;
+	background-color: lightgrey;
+}
+
+.box-container div div span{
+	font-size: 15px;
+	color: white;
+	font-family: sans-serif;
+}
+
+.skills-name{
+	width: inherit;
+	padding-top: 4px;
+	padding-left: 4px;
+}
+
+
+.mb{
+	background-color: royalblue;
+}
+
+.mg{
+	background-color:limegreen;
+}
+
+.mp{
+	background-color:mediumpurple;
+}
+
+.mo{
+	background-color:orange;
+}
+
+.fifty-percent{
+	width:50%;
+	height: inherit;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.ninty-percent{
+	width: 90%;
+	height: inherit;
+	border-radius: 20px 0px 0px 20px;
+}
+
+.eighty-percent{
+	width: 80%;
+	height: inherit;
+	border-radius: 20px 0px 0px 20px;
+}
+
+
+
+
+
+
+
+/*				WORK EXPERIENCE SECTION*/
+
+
+#experience-logo i{
+	color: #2857a4;
+}
+
+#experience-header{
+	font-size: 40px;
+	color: #2857a4;
+	font-family: sans-serif;
+}
+
+#work-experience{
+	padding-top: 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+
+.timeline{
+	width: 75%;
+	position: relative;
+/*	border: 2px solid black;*/
+	margin-left: 14%;
+	margin-top: 50px;
+}
+
+
+.timeline-boxes{
+	position: relative;
+	margin: 5px;
+	width: 40%;
+	left: 5%;
+	min-height: 150px;
+/*	border: 1px solid black;*/
+	display: flex;
+	flex-direction: column;
+}
+
+.timeline-boxes:nth-child(2n){
+	left:53%;
+}
+
+.timeline-boxes:nth-child(2n+1)::after{
+	content: '';
+	border-radius: 50%;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: grey;
+	position: absolute;
+	top: 30%;
+	right: -13%;
+}
+
+.timeline-boxes:nth-child(2n)::before{
+	content: '';
+	border-radius: 50%;
+	width: 0.6rem;
+	height: 0.6rem;
+	background-color: grey;
+	position: absolute;
+	top: 30%;
+	left: -9.5%;
+}
+
+.timeline-divider{
+	position: absolute;
+	left: 50%;
+	height: 75%;
+	width: 0;
+	border: 3px dashed #0096fa6b;
+	top: 8%;
+}
+
+.timeline-traveller{
+	position: sticky;
+	top: 25%;
+	font-size: 30px;
+	color: #2857a4;
+	transform: rotate(90deg);
+}
+
+.box-header{
+	display: flex;
+	justify-content: space-between;
+	margin-right: 5px;
+}
+
+.box-header i{
+	display: inline-block;
+	color: orange;
+	margin: 5px;
+	font-size: 50px;
+}
+
+
+.header-right h2{
+	margin: 0px;
+	margin-bottom: 2px;
+	color: #2857a4;
+}
+.header-right h3{
+	margin: 0px;
+	color: orange;
+}
+.header-right h5{
+	margin: 0px;
+	color: lightgrey;
+}
+
+.header-right{
+	text-align: right;
+	font-family: sans-serif;
+}
+.box-content{
+	color: slategrey;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+
+
+
+
+
+
+/*						EDUCATION SECTION*/
+
+
+
+#education{
+	padding-top:40px;
+}
+
+#education-header{
+	font-size: 40px;
+	color: #2857a4;
+	font-family: sans-serif;
+}
+
+/*rest are same as the above section so used the classes*/
+
+
+
+
+
+
+/*				PORTFOLIO SECTION	*/
+
+
+#portfolio{
+	display: flex;
+	flex-direction: column;
+}
+
+
+#portfolio-heading{
+	font-size: 40px;
+	color:#2857a4;
+	margin-top: 40px;
+	font-family: sans-serif;
+}
+
+
+#portfolio-content{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+#portfolio-content div img{
+	height: 270px;
+	width: auto;
+}
+
+
+/*#portfolio-content div img:hover{
+	opacity: 0.6;
+	filter: blur(4px);
+}*/
+
+.portfolio-message{
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	text-align: center;
+	color: transparent;
+	padding:10px;
+}
+
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+
+
+
+
+
+
+
+
+/*				CONTACT SECTION*/
+
+
+
+#contact{
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(to top right, #2857a4, #403066);
+}
+
+#contact-heading{
+	font-size: 40px;
+	color: white;
+	font-family: sans-serif;
+	margin-top: 40px;
+}
+
+
+#contact-content{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#address{
+	color: white;
+	font-family: sans-serif;
+	width: 45%;
+	margin-left: 80px;
+}
+
+
+#para{
+	font-weight: lighter;
+	color: lightgrey;
+}
+
+#contact-form{
+	width: 45%;
+}
+
+#your-name, #your-email, #input-message{
+	width: 400px;
+	margin: 30px;
+	margin-left: 60px;
+	background-color: transparent;
+	border: 0px solid transparent;
+	border-bottom: 2px solid white;
+	padding-bottom: 10px;
+}
+
+#submit-button{
+	background-color: transparent;
+	border: 2px solid white;
+	color: white;
+	display: block;
+	height: 25px;
+	width: auto;
+	margin-left: 200px;
+	padding:20px;
+	font-weight: bold;
+	padding-bottom: 30px;
+	margin-top: 20px;
+}
+
+#address>div{
+	margin-bottom: 20px;
+	color: lightgrey;
+}
+
